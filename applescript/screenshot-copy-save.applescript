@@ -13,7 +13,7 @@ try
 	set screenshotDir to path to desktop folder as text
 
  -- Name of each new screenshot will be a timestamp
- set filePath to screenshotDir & (do shell script "date +%Y-%m-%d-%H-%M-%S-%N.jpg")
+ set filePath to screenshotDir & (do shell script "date +%Y-%m-%d-%H-%M-%S.jpg")
 
  -- Write the image data to the file
  set newFile to open for access filePath with write permission
